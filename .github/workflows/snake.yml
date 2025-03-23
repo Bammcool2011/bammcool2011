@@ -1,4 +1,4 @@
-name: Generate Snake Game
+name: Generate Snake Animation
 
 on:
   schedule:
@@ -10,15 +10,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4 # Updated to v4 for latest version
-      - name: Generate snake SVG
-        uses: Platane/snk/svg-only@v3
+        uses: actions/checkout@v4
+      - name: Generate snake animation
+        uses: Platane/snk@v3
         with:
-          github_user_name: Bammcool2011
-          outputs: dist/github-contribution-grid-snake.svg
-      - name: Push to output branch
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+      - name: Push files to repository
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: output
+          branch: main # Or an 'output' branch if preferred
           directory: dist
