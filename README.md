@@ -1,5 +1,13 @@
 <h2 align="left">Hi!, My name is Pumin👋</h2>
 
+### 👨🏻‍💻 About Me
+
+💻 I’m a junior software developer with a passion for front-end development and a growing interest in studying back-end technologies as well.  
+🎓 I’m currently pursuing an IT degree at Stamford International University.  
+🛠 My projects include the *Cities Skylines Thai Localization Mod* and *Style-War CSS Competition Platform*.  
+🎧 In my free time, I love listening to music and playing video games.  
+✉️ Feel free to contact me at [puminwangprasit@gmail.com](mailto:puminwangprasit@gmail.com)!
+
 ### 🛠 Tech Stack
 
 ![Arduino](https://img.shields.io/badge/-Arduino-05122A?style=flat&logo=arduino) 
